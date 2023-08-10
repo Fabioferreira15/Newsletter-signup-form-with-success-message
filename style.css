@@ -99,5 +99,12 @@ button {
 
     .right {
         order: 1;
+        padding: 0;
+    }
+    .right img {
+        width: 100%;
+    }
+    .card{
+        padding: 0%;
     }
 }
