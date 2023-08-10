@@ -2,13 +2,14 @@ function storeEmail() {
   let email = document.getElementById("email").value;
 
   if (email.trim() === "") {
-    alert("Please enter an email address.");
-    return false; // Impede o envio do formulário se o campo estiver vazio
+    let errorMessageElement = document.getElementById("error-message");
+    errorMessageElement.textContent = "Please enter an email address.";
+    return false; 
   }
 
   localStorage.setItem("email", email);
-  window.location.href = "../../sucess.html"; // Redireciona para a página de sucesso
-  return false; // Permite o envio do formulário
+  window.location.href = "../../sucess.html"; 
+  return false; 
 }
 
 //escolher a pagina pelo tittle
