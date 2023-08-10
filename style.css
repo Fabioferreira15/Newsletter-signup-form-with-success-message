@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.left h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li:before {
+    content: url("./assets/images/icon-list.svg");
+    margin-right: 10px;
+
+
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.form-elements label,
+.form-elements input,
+.form-elements button {
+    margin: 5px 0;
+}
+
+label {
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(234, 29%, 20%);
+}
+
+input {
+    border-radius: 7px;
+    border: 1px solid hsl(233, 14%, 35%);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(234, 29%, 20%);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid hsl(234, 29%, 20%);
+}
+
+button {
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 938px) {
+    .left {
+        order: 2;
+    }
+
+    .right {
+        order: 1;
+    }
+}
